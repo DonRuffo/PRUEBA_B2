@@ -41,7 +41,9 @@ public class Login {
                             menu.setVisible(true);
                             ((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
                         }else{
-                            JOptionPane.showMessageDialog(null,"No existe el usuario o las credenciales son incorrectas.");
+                            JOptionPane.showMessageDialog(null,"No existe el usuario");
+                            UsuarioLogin.setText("");
+                            ContraLogin.setText("");
                         }
                     }
 
